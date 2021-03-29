@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" version="14.0">
+	<children>
+		<child name="Test1_soma" key="{F700FFA9-5F54-4E81-85D9-7B71047F95AA}" path="Test1_soma.tcKDTest" />
+		<child name="Test2_subtracao" key="{D22BB19B-1460-4BEA-A061-C4592A4524C8}" path="Test2_subtracao.tcKDTest" />
+		<child name="Test3_multiplicacao" key="{D91F198F-8E0B-445F-95E0-636DBE6F5109}" path="Test3_multiplicacao.tcKDTest" />
+		<child name="Test4_divisao" key="{A3A636F1-6E36-4FA0-9E4A-ADFDA078BC12}" path="Test4_divisao.tcKDTest" />
+	</children>
+</Root>
