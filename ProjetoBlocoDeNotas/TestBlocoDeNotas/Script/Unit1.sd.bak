@@ -1,0 +1,68 @@
+﻿procedure TesteAbrirBloco;
+begin
+  TestedApps.notepad.Run(1, true);
+  aqObject.CheckProperty(Aliases.notepad.wndNotepad.Edit, 'wText', cmpEqual, '');
+end;
+
+procedure TesteOlaMundo;
+begin
+  Aliases.notepad.wndNotepad.Edit.Click(159, 108);
+  Aliases.notepad.wndNotepad.Edit.Keys('Ol[D219]a mundo');
+  aqObject.CheckProperty(Aliases.notepad.wndNotepad.Edit, 'wText', cmpEqual, 'Olá mundo');
+end;
+
+procedure TesteEscrita;
+begin
+  Aliases.notepad.wndNotepad.Edit.Click(128, 30);
+  Aliases.notepad.wndNotepad.Edit.Keys('[Enter]');
+  Aliases.notepad.wndNotepad.Edit.Click(20, 42);
+  Aliases.notepad.wndNotepad.Edit.Keys('Esse [D219]e um teste p[BS]de r[BS]escrita npo[BS][BS]o bloco de notas.');
+  aqObject.CheckProperty(Aliases.notepad.wndNotepad.Edit, 'wText', cmpEqual, 'Olá mundo'#13#10'Esse é um teste de escrita no bloco de notas.');
+  Aliases.notepad.wndNotepad.Edit.Keys('[Enter]Hoje dia 30 de março de 2021');
+  aqObject.CheckProperty(Aliases.notepad.wndNotepad.Edit, 'wText', cmpEqual, 'Olá mundo'#13#10'Esse é um teste de escrita no bloco de notas.'#13#10'Hoje dia 30 de março de 2021');
+end;
+
+procedure TesteSave;
+begin
+  Aliases.notepad.wndNotepad.MainMenu.Click('Arquivo|Salvar');
+  Aliases.notepad.dlgSalvarComo.DUIViewWndClassName.Painel_do_Explorer.CtrlNotifySink.NamespaceTreeControl.TreeView.ClickItem('|Área de Trabalho');
+  Aliases.notepad.dlgSalvarComo.DUIViewWndClassName.Painel_do_Explorer.FloatNotifySink.ComboBox.Edit.Click(4, 9);
+  Aliases.notepad.dlgSalvarComo.DUIViewWndClassName.Painel_do_Explorer.FloatNotifySink.ComboBox.SetText('saveTeste');
+  Aliases.notepad.dlgSalvarComo.DUIViewWndClassName.Painel_do_Explorer.FloatNotifySink.ComboBox.Edit.Keys('[Right][Right][Right][Right][Right][Right][Right]');
+  Aliases.notepad.dlgSalvarComo.btnSalvar.ClickButton;
+  Aliases.notepad.wndNotepad.Close;
+end;
+
+procedure TesteAbrirSave;
+begin
+  TestedApps.NOTEPAD1.Run(1, true);
+  aqObject.CheckProperty(Aliases.notepad.wndNotepad.Edit, 'wText', cmpEqual, 'Olá mundo'#13#10'Esse é um teste de escrita no bloco de notas.'#13#10'Hoje dia 30 de março de 2021');
+end;
+
+procedure FimTeste;
+begin
+  Aliases.notepad.wndNotepad.Edit.Click(9, 71);
+  Aliases.notepad.wndNotepad.Edit.Click(2, 66);
+  Aliases.notepad.wndNotepad.Edit.Click(227, 46);
+  Aliases.notepad.wndNotepad.Edit.Keys('[Enter][Enter]Se ![ReleaseLast]voc[D222]e[BS][BS]![D222]e est[D219]a lendo isso o teste chegou ao fim !! :)');
+  aqObject.CheckProperty(Aliases.notepad.wndNotepad.Edit, 'wText', cmpEqual, 'Olá mundo'#13#10'Esse é um teste de escrita no bloco de notas.'#13#10'Hoje dia 30 de março de 2021'#13#10#13#10'Se você está lendo isso o teste chegou ao fim ! :)');
+end;
+
+procedure ORealFim;
+begin
+  Aliases.notepad.wndNotepad.Edit.Keys('[Enter][Enter]Voc![D222]e rodou a[BS]esse teste as');
+  aqObject.CheckProperty(Aliases.notepad.wndNotepad.Edit, 'wText', cmpEqual, 'Olá mundo'#13#10'Esse é um teste de escrita no bloco de notas.'#13#10'Hoje dia 30 de março de 2021'#13#10#13#10'Se você está lendo isso o teste chegou ao fim ! :)'#13#10#13#10'Você rodou esse teste as');
+  Aliases.notepad.wndNotepad.Edit.Click(198, 121);
+  Aliases.notepad.wndNotepad.Edit.Keys(' [F5]');
+end;
+
+procedure Executar;
+begin
+  TesteAbrirBloco;
+  TesteOlaMundo;
+  TesteEscrita;
+  TesteSave;
+  TesteAbrirSave;
+  FimTeste;
+end;
+

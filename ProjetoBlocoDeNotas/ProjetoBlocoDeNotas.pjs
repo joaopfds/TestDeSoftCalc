@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{D1C3D728-3927-4D1B-AE30-2505E0238AD9}">
+	<children>
+		<child name="TestBlocoDeNotas" key="{ED9672BC-4641-473B-8DD3-6F6D38966308}" path="TestBlocoDeNotas\TestBlocoDeNotas.mds" />
+	</children>
+	<testItems key="{E8113A05-18AE-4971-8F1D-AAEF7F9357AC}">
+		<children>
+			<testItem key="{ED9672BC-4641-473B-8DD3-6F6D38966308}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{FEAEF231-B261-42F7-8084-2E6945B00147}" />
+	<analysis key="{AB628B8C-1D85-47C4-BCB7-7CE0093222E1}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+</Root>

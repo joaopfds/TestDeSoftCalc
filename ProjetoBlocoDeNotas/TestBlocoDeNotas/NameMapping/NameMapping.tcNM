@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{AFF47180-7202-434A-8D5C-604EE8A09C2B}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="notepad" Key="{FB84D914-CE40-4420-AB4B-2AD884294C4E}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="notepad" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndNotepad" Key="{B95A3F79-F28C-44DE-8A6D-9DDE699797F9}">
+								<Image FileName="-934944512" Left="0" Top="0" Right="944" Bottom="491" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Notepad" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="Edit" Key="{DAA76782-0410-4ECE-841D-5AF7C3F52B65}">
+										<Image FileName="-934944512" Left="8" Top="51" Right="936" Bottom="460" />
+										<TypeInfo Item0="{9061CF87-1101-4204-B614-E08EAEAB702D}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Edit" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="dlgSalvarComo" Key="{DB404B1B-0012-4E07-8760-6C267CCCA95B}">
+								<Image FileName="-1371476829" Left="0" Top="0" Right="680" Bottom="480" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="#32770" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Salvar como" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="DUIViewWndClassName" Key="{B03E15EA-7E75-4D8C-A443-90002924A9D6}">
+										<Image FileName="-1371476829" Left="8" Top="73" Right="672" Bottom="420" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="DUIViewWndClassName" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="Painel_do_Explorer" Key="{8504A50B-3282-4131-B91C-A78726842E0C}">
+												<Image FileName="-1371476829" Left="8" Top="73" Right="672" Bottom="420" />
+												<Properties>
+													<Property Name="FrameworkId">
+														<Value Value="DirectUI" />
+													</Property>
+													<Property Name="ClassName">
+														<Value Value="HWNDView" />
+													</Property>
+													<Property Name="LocalizedControlType">
+														<Value Value="painel" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="Painel_do_Explorer" />
+													</Property>
+													<Property Name="ObjectGroupIndex">
+														<Value Value="1" Type="0" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="CtrlNotifySink" Key="{280FA494-42A9-4AAE-980F-D4B852E566CD}">
+														<Image FileName="-1371476829" Left="8" Top="104" Right="164" Bottom="355" />
+														<Properties>
+															<Property Name="WndClass">
+																<Value Value="CtrlNotifySink" />
+															</Property>
+															<Property Name="WndCaption">
+																<Value Value="" />
+															</Property>
+															<Property Name="Index">
+																<Value Value="1" Type="0" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="NamespaceTreeControl" Key="{B240B521-83EC-4447-B047-D47EE7C25A47}">
+																<Image FileName="-1371476829" Left="8" Top="104" Right="164" Bottom="355" />
+																<Properties>
+																	<Property Name="WndClass">
+																		<Value Value="NamespaceTreeControl" />
+																	</Property>
+																	<Property Name="WndCaption">
+																		<Value Value="Controle da Árvore de Namespace" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="TreeView" Key="{EE9DB68B-C2F6-438B-BEF2-18B359888209}">
+																		<Image FileName="-1371476829" Left="8" Top="104" Right="164" Bottom="355" />
+																		<TypeInfo Item0="{C2BB6E72-7B39-4815-BC04-96FB368CD925}" />
+																		<Properties>
+																			<Property Name="WndClass">
+																				<Value Value="SysTreeView32" />
+																			</Property>
+																			<Property Name="WndCaption">
+																				<Value Value="Modo de Exibição de Árvore" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																</Children>
+															</Child>
+														</Children>
+													</Child>
+													<Child Name="FloatNotifySink" Key="{B1AB43D1-2389-43EA-A76B-5BAFB6F86D16}">
+														<Image FileName="-1890341060" Left="133" Top="366" Right="667" Bottom="389" />
+														<Properties>
+															<Property Name="WndClass">
+																<Value Value="FloatNotifySink" />
+															</Property>
+															<Property Name="WndCaption">
+																<Value Value="" />
+															</Property>
+															<Property Name="Index">
+																<Value Value="1" Type="0" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="ComboBox" Key="{D8D9651E-4139-46F0-8CDE-DB48FEA4B969}">
+																<Image FileName="-1890341060" Left="133" Top="366" Right="667" Bottom="389" />
+																<Properties>
+																	<Property Name="WndClass">
+																		<Value Value="ComboBox" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="Edit" Key="{08934223-E12F-445B-9864-2B15ACB61DA0}">
+																		<Image FileName="-1890341060" Left="136" Top="369" Right="647" Bottom="386" />
+																		<TypeInfo Item0="{9061CF87-1101-4204-B614-E08EAEAB702D}" />
+																		<Properties>
+																			<Property Name="WndClass">
+																				<Value Value="Edit" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																</Children>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="btnSalvar" Key="{4338B36B-A006-4CF1-833E-01A528F3EE3B}">
+										<Image FileName="-2015872968" Left="467" Top="434" Right="555" Bottom="460" />
+										<TypeInfo Item0="{0CEB24C7-77E2-41AA-8CBE-9DE6F64BA3E3}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="Sa&amp;lvar" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="notepad" Owner="{FB84D914-CE40-4420-AB4B-2AD884294C4E}">
+			<Child Name="wndNotepad" Owner="{B95A3F79-F28C-44DE-8A6D-9DDE699797F9}">
+				<Child Name="Edit" Owner="{DAA76782-0410-4ECE-841D-5AF7C3F52B65}" />
+			</Child>
+			<Child Name="dlgSalvarComo" Owner="{DB404B1B-0012-4E07-8760-6C267CCCA95B}">
+				<Child Name="DUIViewWndClassName" Owner="{B03E15EA-7E75-4D8C-A443-90002924A9D6}">
+					<Child Name="Painel_do_Explorer" Owner="{8504A50B-3282-4131-B91C-A78726842E0C}">
+						<Child Name="CtrlNotifySink" Owner="{280FA494-42A9-4AAE-980F-D4B852E566CD}">
+							<Child Name="NamespaceTreeControl" Owner="{B240B521-83EC-4447-B047-D47EE7C25A47}">
+								<Child Name="TreeView" Owner="{EE9DB68B-C2F6-438B-BEF2-18B359888209}" />
+							</Child>
+						</Child>
+						<Child Name="FloatNotifySink" Owner="{B1AB43D1-2389-43EA-A76B-5BAFB6F86D16}">
+							<Child Name="ComboBox" Owner="{D8D9651E-4139-46F0-8CDE-DB48FEA4B969}">
+								<Child Name="Edit" Owner="{08934223-E12F-445B-9864-2B15ACB61DA0}" />
+							</Child>
+						</Child>
+					</Child>
+				</Child>
+				<Child Name="btnSalvar" Owner="{4338B36B-A006-4CF1-833E-01A528F3EE3B}" />
+			</Child>
+		</Child>
+	</LogicalNodes>
+</Root>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" version="1400" key="{8FAE53FD-BD9C-4A9F-B061-CFA8B821E23E}" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}">
+	<config nodeName="TestedApps" />
+	<testData />
+	<data />
+	<children>
+		<child key="{8799CB46-9FF3-4578-9BD7-A694BE70DB3B}">
+			<config nodeName="notepad" autorunOnRecording="False" enabled="True" count="1" useFeaturedRuntimeObject="True" userChangeName="False">
+				<runModeParams activeRunMode="Simple">
+					<param name="RunAs" parameters="" workFolder="%HOMEDRIVE%%HOMEPATH%" userName="" password="" domain="" />
+					<param name="Profile" parameters="" workFolder="%HOMEDRIVE%%HOMEPATH%" useProject="False" projectFileName="" overrideProfiler="False" profilerName="" profileRunMode="Silent" AQtimeVersion="0" forceRunMode="False" />
+					<param name="Debug" parameters="" workFolder="%HOMEDRIVE%%HOMEPATH%" />
+					<param name="Simple" fileName="notepad.exe" filePath="C:\WINDOWS\system32\" parameters="" workFolder="%HOMEDRIVE%%HOMEPATH%" />
+				</runModeParams>
+			</config>
+			<testData />
+			<data />
+		</child>
+		<child key="{5062DDD1-CA10-46B0-96B1-18C0DE244F5F}">
+			<config nodeName="NOTEPAD1" autorunOnRecording="False" enabled="True" count="1" useFeaturedRuntimeObject="True" userChangeName="False">
+				<runModeParams activeRunMode="Simple">
+					<param name="RunAs" parameters="C:\Users\João\Desktop\saveTeste.txt" workFolder="C:\Users\João\Desktop" userName="" password="" domain="" />
+					<param name="Profile" parameters="C:\Users\João\Desktop\saveTeste.txt" workFolder="C:\Users\João\Desktop" useProject="False" projectFileName="" overrideProfiler="False" profilerName="" profileRunMode="Silent" AQtimeVersion="0" forceRunMode="False" />
+					<param name="Debug" parameters="C:\Users\João\Desktop\saveTeste.txt" workFolder="C:\Users\João\Desktop" />
+					<param name="Simple" fileName="NOTEPAD.EXE" filePath="C:\WINDOWS\system32\" parameters="C:\Users\João\Desktop\saveTeste.txt" workFolder="C:\Users\João\Desktop" />
+				</runModeParams>
+			</config>
+			<testData />
+			<data />
+		</child>
+	</children>
+</Root>
