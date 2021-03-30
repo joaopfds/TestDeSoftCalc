@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="calculadora" key="{0F4215FC-96D3-41F2-A4B5-C9A16C145119}" path="calculadora.sd" />
+		<child name="MemoriaCalculo" key="{76A6C444-1B86-4741-802A-2148E29D9513}" path="MemoriaCalculo.sd" />
+		<child name="Main" key="{460B0CB2-2C0E-4FB1-B039-C1D3C0DA7B8C}" path="Main.sd" />
+	</children>
+</Root>

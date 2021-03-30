@@ -1,0 +1,42 @@
+﻿procedure TesteMemoriaCalculo;
+begin
+  aqObject.CompareProperty(Sys.Process('calc').Window('SciCalc', 'Calculadora', 1).Window('Edit', '', 1).wText, cmpContains, '0', false);
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', '2').ClickButton;
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', '+').ClickButton;
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', '1').ClickButton;
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', '=').ClickButton;
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', 'M+').ClickButton;
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', '2').ClickButton;
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', '+').ClickButton;
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', '2').ClickButton;
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', '=').ClickButton;
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', 'M+').ClickButton;
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', 'MR').ClickButton;
+  aqObject.CompareProperty(Sys.Process('calc').Window('SciCalc', 'Calculadora', 1).Window('Edit', '', 1).wText, cmpContains, '7', false);
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', 'MC').ClickButton;
+  Sys.Process('calc').Window('SciCalc', 'Calculadora').Window('Button', 'C').ClickButton;
+end;
+
+procedure Executar();
+begin
+   TesteMemoriaCalculo;
+end;
+
+procedure Test1;
+begin
+  aqObject.CheckProperty(Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.A_exibi_o_0.TextContainer.NormalOutput, 'Text', cmpContains, '0', false);
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Dois.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Operadores_padr_o.Mais.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Um.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Operadores_padr_o.Igual_a.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Controles_de_mem_ria.Adi_o_de_Mem_ria.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Dois.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Operadores_padr_o.Mais.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Dois.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Operadores_padr_o.Igual_a.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Controles_de_mem_ria.Adi_o_de_Mem_ria.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Controles_de_mem_ria.Rechamada_de_Mem_ria.Click;
+  aqObject.CheckProperty(Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.A_exibi_o_0.TextContainer.NormalOutput, 'Text', cmpContains, '7', false);
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Controles_de_mem_ria.Limpar_toda_a_mem_ria.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Controles_de_exibi_o.Limpar.Click;
+end;

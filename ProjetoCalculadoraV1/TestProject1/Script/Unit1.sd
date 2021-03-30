@@ -1,0 +1,44 @@
+﻿procedure Test1_soma;
+begin
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Controles_de_exibi_o.Limpar.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Um.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Zero.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Operadores_padr_o.Mais.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Um.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Zero.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Operadores_padr_o.Igual_a.Click;
+  OCR.Recognize(Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.A_exibi_o_20.TextContainer.NormalOutput).CheckText('*20*');
+end;
+
+procedure Test2_subtracao;
+begin
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Controles_de_exibi_o.Limpar.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Um.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Zero.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Operadores_padr_o.Menos.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Cinco.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Operadores_padr_o.Igual_a.Click;
+  OCR.Recognize(Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.A_exibi_o_20.TextContainer.NormalOutput).CheckText('*5*');
+end;
+
+procedure Test3_multiplicacao;
+begin
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Controles_de_exibi_o.Limpar.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Um.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Zero.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Operadores_padr_o.Multiplicar_por.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Dois.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Operadores_padr_o.Igual_a.Click;
+  OCR.Recognize(Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.A_exibi_o_20.TextContainer.NormalOutput).CheckText('*20*');
+end;
+
+procedure Test4_divisao;
+begin
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Controles_de_exibi_o.Limpar.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Um.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Zero.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Operadores_padr_o.Dividir_por.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Teclado_num_rico.Dois.Click;
+  Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.Operadores_padr_o.Igual_a.Click;
+  OCR.Recognize(Aliases.Microsoft_WindowsCalculator.Calculadora.LandmarkTarget.A_exibi_o_20.TextContainer.NormalOutput).CheckText('*5*');
+end;

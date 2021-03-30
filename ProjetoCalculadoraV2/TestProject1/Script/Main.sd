@@ -1,0 +1,8 @@
+﻿uses
+  calculadora, MemoriaCalculo;
+
+procedure AllTests();
+begin
+    calculadora.Executar;
+    MemoriaCalculo.Executar;
+end;
